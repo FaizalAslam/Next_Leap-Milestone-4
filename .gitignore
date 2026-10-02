@@ -1,0 +1,11 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+chroma_db/
+/data/raw/
+/data/processed/*/
+/data/processed/index_manifest.json
+.DS_Store
+Thumbs.db

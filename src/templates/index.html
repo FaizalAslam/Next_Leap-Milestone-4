@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#faf8ff">
+    <title>SBI Mutual Fund FAQ Assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/app.css">
+    <script src="/static/privacy_guard.js" defer></script>
+    <script src="/static/app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/" aria-label="SBI Mutual Fund FAQ Assistant home">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9y8Y7g3hpRyKDxRWWyz--1ap3ZCmxIa7XVl2M_1yKMvECZHuCQ9J8lbFS_wzXhnUlglZvCdUqBCoYZ_xdy9apLFlOmfnMVd0Vs_zaTougwJviJoKeZqBR4ddmHvomTXDowQAQaeZgTDYtM1qltK3kDWGLa716My6XMbCsTiCd8PiTSlUnx5Lyu4swplGLcuO42laFxkJUU5dNY6qJ4CqYrCcRVjqAOYsr6M8BmsN7HBEIcb1inhee" alt="" class="brand-logo">
+          <span class="brand-logo-fallback" aria-hidden="true" hidden>SBI</span>
+          <span class="brand-copy"><span class="brand-name">SBI Mutual Fund</span><span class="brand-subtitle">FAQ Assistant</span></span>
+        </a>
+        <div class="header-actions">
+          <nav class="primary-nav" aria-label="Primary navigation">
+            <button class="nav-link is-current" type="button" aria-current="page" data-nav-view="assistant">Assistant</button>
+            <button class="nav-link" type="button" data-nav-view="schemes">Schemes</button>
+            <button class="nav-link" type="button" data-nav-view="help">Help</button>
+            <button class="nav-link" type="button" data-nav-view="about">About</button>
+          </nav>
+          <span class="header-divider" aria-hidden="true"></span>
+          <button class="profile-button" type="button" aria-label="Profile, unavailable" aria-disabled="true" data-disabled-action>
+            <span class="material-symbols-outlined" data-fallback="♙" aria-hidden="true">person</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="assistant-app" class="app-main" aria-live="off" data-investor-url="{{ investor_portal_url }}" data-groww-url="{{ groww_dashboard_url }}"></main>
+    <div id="interaction-status" class="sr-only" role="status" aria-live="polite"></div>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span>Mutual Fund investments are subject to market risks. Read all scheme-related documents carefully.</span>
+        <span>Informational scheme FAQs · No account access</span>
+      </div>
+    </footer>
+  </body>
+</html>
